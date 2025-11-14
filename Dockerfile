@@ -5,7 +5,5 @@ USER root
 RUN apk add --update python3 py3-pip
 RUN rm /usr/lib/python3.12/EXTERNALLY-MANAGED
 
-USER n8n
-
 RUN pip3 install pyktok
 ENV NODE_FUNCTION_ALLOW_EXTERNAL=pyktok
